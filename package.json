@@ -1,0 +1,30 @@
+{
+  "name": "mern-ecommerce-fullstack",
+  "version": "1.0.0",
+  "description": "Complete MERN stack e-commerce application with user authentication, product management, shopping cart, and payment integration",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "mern",
+    "ecommerce",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "razorpay",
+    "jwt",
+    "authentication"
+  ],
+  "author": "Based on Suman Malakar's original work",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
